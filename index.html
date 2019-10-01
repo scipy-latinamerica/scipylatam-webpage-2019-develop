@@ -38,7 +38,7 @@
   <script src="https://use.fontawesome.com/53338901d9.js"></script>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="./static/gen/styles.css?h=bff6c332" />
+  <link rel="stylesheet" href="./static/gen/styles.css?h=1eff6b2e" />
 </head>
 
 <body>
@@ -104,7 +104,7 @@
           
           <li class="general__menu-item">
               <a class="general__menu-link "
-              href="#">
+              href="">
                PROGRAMA&nbsp;&nbsp;<i class="fa fa-caret-down soft-red"></i>
              </a>
              <ul class="general__menu-sublist">
@@ -140,6 +140,8 @@
               </a>
                       
           </li>
+          
+        
           
         
           
@@ -235,11 +237,11 @@
         <span>Días</span>
       </div>
       <div class="countdown-item">
-        <span id="countdown-minutes"></span>
+        <span id="countdown-hours"></span>
         <span>Horas</span>
       </div>
       <div class="countdown-item">
-          <span id="countdown-hours"></span>
+        <span id="countdown-minutes"></span>
           <span>Minutos</span>
         </div>      
       <div class="countdown-item">
@@ -263,7 +265,7 @@
   <div class="keynote-landing content">
     <h1>PONENTES INVITADOS</h1>
     <div class="keynote-container">
-                                                                                     
+                                                                                       
         <div class="keynote__card">
   <div class="keynote__card-wrapper">
     <a href=./ponentes/travis-oliphant/>
@@ -933,6 +935,12 @@
         
           
           <li>
+            <a href="./convence-a-tu-jefe/">Convence a tu jefe</a>
+          </li>
+          
+        
+          
+          <li>
             <a href="./preguntas-frecuentes/">Preguntas</a>
           </li>
           
@@ -1012,7 +1020,9 @@
 <script>
   // Set the date we're counting down to
   
-  var countDownDate = new Date("2019-10-08").getTime();
+  
+  // To take into account that the event starts at 9:00 am
+  var countDownDate = new Date("2019-10-08" + " 09:00").getTime();
 
   // Update the count down every 1 second
   var x = setInterval(function() {
